@@ -1,0 +1,28 @@
+Virtualization enables the hardware resources of a single computer to be divided into multiple virtual computers, called virtual machines.
+
+
+Benefits of virtualization:
+    a) Resource efficiency
+    b) Easier management
+    c) Minimal downtime
+    d) Faster provisioning
+    
+Hypervisor is a software component that manages multiple virtual machines in a computer. It ensures that each virtual machine gets the allocated resources and does not interfere with the operation of other virtual machines. There are two types of hypervisors.
+
+There are 2 types of Hypervisiors:
+    a) Type1 - with bare metal
+    b) type2 - Hosted
+
+    Type1: Type 1 or bare-metal hypervisors interact with the underlying physical resources, replacing the traditional operating system altogether. They most commonly appear in virtual server scenarios.
+
+    Type2: Type 2 hypervisors run as an application on an existing OS. Most commonly used on endpoint devices to run alternative operating systems, they carry a performance overhead because they must use the host OS to access and coordinate the underlying hardware resources.
+
+
+    Virtualization Vs Containerization
+    In virtualization application runs as guest OS on hypervisors, whereas containerization run on host OS, with pre installed code, libraries, OS as well.
+
+    more info: https://www.baeldung.com/cs/virtualization-vs-containerization
+
+
+more info: https://aws.amazon.com/what-is/virtualization/
+           https://www.ibm.com/topics/virtualization
