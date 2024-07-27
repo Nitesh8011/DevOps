@@ -48,6 +48,7 @@ commands:
             echo "shutdown -h now" | at -m 4:30 --> shutdown system at 4:30am or pm
             at now +5 hours --> run jobs after 5hours from now
 
+
     3. nohup - help to run command or script over SSH even if session get terminated and you can check running process in nohup.out file 
 
         syntax:
@@ -80,6 +81,7 @@ commands:
         example:
             sleep 500 (ctrl+Z -> stop the jobs)
             check with jobs with 'jobs' and can run that in backgroupd with %1 (1 if there is only one job)
+
 
 
     6. wait - Wait command is one of the process management commands. There are different process commands in Linux mainly 5 commands are widely used which are ps, wait, sleep, kill, exit

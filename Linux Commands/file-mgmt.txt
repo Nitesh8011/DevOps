@@ -1,0 +1,44 @@
+commands:
+
+    1. chroot - chroot command in Linux/Unix system is used to change the root directory. Every process/command in Linux/Unix like systems has a current working directory called root directory.
+
+        Uses:
+            To create a test environment.
+            To recover the system or password.
+            To reinstall the bootloader.
+
+        syntax:
+            chroot /path/to/new/root command
+
+
+    2. file - used to check the type of file
+
+        syntax:
+            file [option] [filename]
+
+        options:
+            b - breif
+
+        example:
+            file [a-e]* --> display the file type of files in specific range
+
+    3. wc - word count
+
+        syntax:
+            wc [OPTION] [FILE]
+
+        option:
+            l - number of lines
+            w - number of words
+            c - number of characters
+
+        example:
+            wc text.txt  --> it will give number of no. of number(col 1), no. of words(col 2) and no. of characters(col 3)
+        
+
+        
+    4. hd or hexdump -  command in Linux is used to filter and display the specified files, or standard input in a human readable specified format.
+
+    5. tee - standard input and writes it to both the standard output and one or more files
+
+    6. script - recording everything printed on the screen including the inputs and outputs until exit

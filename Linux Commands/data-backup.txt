@@ -1,4 +1,4 @@
-command:
+commands:
     
     1. rsync - remote synchronization  used for syncing files and directories between two machines or within the same machine.
 
