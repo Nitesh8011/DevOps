@@ -41,7 +41,3 @@ commands:
         example:
             uniq -di text.txt --> display only duplicate line with ingnore case sensitive 
             uniq -D text.txt --> display all duplicate line only
-
-
-        
-more info: https://www.geeksforgeeks.org/rsync-command-in-linux-with-examples/?ref=lbp

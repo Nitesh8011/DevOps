@@ -1,4 +1,4 @@
-# DevOps
+# Linux Commands
 
 
 ## Fun fact
@@ -12,6 +12,5 @@ echo "Linux is Best"
 ```
 
 Linux commands
-```
+
 https://www.geeksforgeeks.org/linux-commands/?ref=lbp
-```

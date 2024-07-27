@@ -20,9 +20,3 @@ There are 2 types of Hypervisiors:
 
     Virtualization Vs Containerization
     In virtualization application runs as guest OS on hypervisors, whereas containerization run on host OS, with pre installed code, libraries, OS as well.
-
-    more info: https://www.baeldung.com/cs/virtualization-vs-containerization
-
-
-more info: https://aws.amazon.com/what-is/virtualization/
-           https://www.ibm.com/topics/virtualization
