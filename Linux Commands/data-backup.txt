@@ -1,0 +1,47 @@
+command:
+    
+    1. rsync - remote synchronization  used for syncing files and directories between two machines or within the same machine.
+
+        syntax: rsync [options] source [destination]
+
+        options:
+            a - archive
+            h - human readable format
+            v - verbose
+            z - compress data during the transfer
+
+        example: rsync -avhz local-file user@remote-host:remote-file
+
+
+    2. screen - use for multiple shell sessions from a single ssh session
+
+        syntax: screen [-opts] [cmd [args]]
+            
+
+        example: 
+            screen -S <screen_name> --> to start screen with name
+            screen -ls --> list of screen
+            screen -r <screen_name> --> reattach screen
+            screen -d <screen_name> --> detach screen
+            screen -S <screen_name> -X quit
+
+
+    3.  uniq - used to filter out repetative lines in file
+
+        syntax: uniq [OPTIONS] [INPUT_FILE [OUTPUT_FILE]]
+
+        options:
+            c - count
+            d - only output repeated lines
+            i - ignore-case
+            f=N - Avoid comparing first field in each line
+            s=N - Aviod comparing first characters in each line
+            u - only output unique line
+
+        example:
+            uniq -di text.txt --> display only duplicate line with ingnore case sensitive 
+            uniq -D text.txt --> display all duplicate line only
+
+
+        
+more info: https://www.geeksforgeeks.org/rsync-command-in-linux-with-examples/?ref=lbp

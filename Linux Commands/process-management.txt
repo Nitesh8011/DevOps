@@ -1,0 +1,88 @@
+commands:
+
+    1. crontab - list of commands that you want to run on a regular schedule
+
+        options:
+            MIN HOUR DOM MON DOW CMD
+
+            1. mintues (0-59)
+            2. hours of day (0-23)
+            3. date of month (1-31)
+            4. month of year (1-12)
+            5. day of week
+
+            crontab -l --> list of cronjobs
+            crontab -e --> Edit crontab file, or create one if it doesn’t already exist.
+            crontab -r --> Remove your current crontab file.
+            crontab -i --> Remove your current crontab file with a prompt before removal.
+            crontab -u <username> --> Edit other user crontab file. This option requires system administrator privileges.
+
+        examples:
+            30 18 * * 6 /home/linux/script.sh (shell script will run at 6:30PM on every sunday)
+
+
+    2. at - to execute job or command tasks at specific time, used when you have to run once or not repetatively.
+
+        syntax:
+            at [-V] [-q queue] [-f file] [-mldbv] timespec
+
+                l - List the at jobs in the queue
+                d - Delete the at job specified by the job number
+                b - Submit a batch job, this is the default behavior
+                v - Display verbose information about the job
+                timespec - Specify the time and date when the job should be executed
+
+        options:
+            m - Send mail to the user when the job is done
+            f - file Read job from a specified file instead of standard input
+            l - Lists all pending jobs (same as atq)
+            d - Deletes a job (same as atrm)
+            v - Shows the time the job is scheduled to run
+            q - queue Assigns the job to a specific queue
+            c - job Displays the commands in the specified job
+
+        example:
+            at -l --> list of schedule jobs
+            at -d 1 --> delete jobs
+
+            echo "shutdown -h now" | at -m 4:30 --> shutdown system at 4:30am or pm
+            at now +5 hours --> run jobs after 5hours from now
+
+    3. nohup - help to run command or script over SSH even if session get terminated and you can check running process in nohup.out file 
+
+        syntax:
+            nohup command [options] &
+
+        example:
+            nohup bash script.sh
+            nohup tar -zcvf tar_file.tar.gz /home/linux
+            nohup bash -c 'cal && ls' --> to run multiple commands
+
+        Imp:
+            nohup bash geekfile.sh &
+            fg --> To run the command in the background, the ‘&’ symbol is appended at the end of the command. After executing, it doesn’t return to the shell command prompt after running the command in the background. It can be brought back to the foreground with the fg command.
+
+    
+    4. bg - used to place foreground jobs in background
+    5. fg - used to place foreground jobs in foreground
+
+        syntax:
+            bg [job spec...]
+            fg [job spec...]
+
+        options:
+            %n : Refer to job number n.
+            %str : Refer to a job which was started by a command beginning with str.
+            %?str : Refer to a job which was started by a command containing str.
+            %% or %+ : Refer to the current job. fg and bg will operate on this job if no job_spec is given.
+            %- : Refer to the previous job.
+
+        example:
+            sleep 500 (ctrl+Z -> stop the jobs)
+            check with jobs with 'jobs' and can run that in backgroupd with %1 (1 if there is only one job)
+
+
+    6. wait - Wait command is one of the process management commands. There are different process commands in Linux mainly 5 commands are widely used which are ps, wait, sleep, kill, exit
+
+        syntax:
+            wait [ID] --> process identifier (pidof <process_name>)
