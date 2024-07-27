@@ -1,0 +1,33 @@
+commands:
+
+    Example:
+        1. Start or Stop Service
+            a) Start or stop a service. Useful when a service is not running
+                systemctl start/stop <service_name>
+            b) To check the status of a service
+                systemctl status <service_name>
+            c) Used to restart a service, useful after making config changes so that changes take effect. This also need admin rights
+                systemctl restart <service_name>
+            d) To enable the service
+                systemctl enable/disable <service_name>
+                    Enabling a service causes the system to start the service upon reboot or whenever a computer starts up. 
+                    The enable subcommand does not start the particular service immediately. You need admin rights
+
+        2. Enable or Mask Service
+            a) To enable and start at same time
+                systemctl enable --now <service_name>
+            b) To check if a service is enabled?
+                systemctl is-enabled <service_name>
+            c) To prevent the service from start
+                systemctl mask/unmask <service_name>
+
+        3. Computer Control Commands
+            a) systemctl poweroff
+            b) systemctl reboot
+            c) systemctl -i reboot (ignoring logged-in users, forcefully)
+
+        4. To list the sockets in memory avaibale for interprocess communication(IPC)
+            a) systemctl list-sockets
+            b) systemctl --show-types list-sockets
+            c) systemctl --show-type list-sockets 'systemd*'
+            d) systemctl --show-types list-sockets --all (to see the inactive sockets)
