@@ -5,7 +5,7 @@ commands:
         Uses:
             To create a test environment.
             To recover the system or password.
-            To reinstall the bootloader.
+            To reinstall the boot loader.
 
         syntax:
             chroot /path/to/new/root command
@@ -17,7 +17,7 @@ commands:
             file [option] [filename]
 
         options:
-            b - breif
+            b - brief
 
         example:
             file [a-e]* --> display the file type of files in specific range

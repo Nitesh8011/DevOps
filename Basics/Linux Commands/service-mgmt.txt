@@ -22,11 +22,11 @@ commands:
                 systemctl mask/unmask <service_name>
 
         3. Computer Control Commands
-            a) systemctl poweroff
+            a) systemctl power off
             b) systemctl reboot
             c) systemctl -i reboot (ignoring logged-in users, forcefully)
 
-        4. To list the sockets in memory avaibale for interprocess communication(IPC)
+        4. To list the sockets in memory available for interprocess communication(IPC)
             a) systemctl list-sockets
             b) systemctl --show-types list-sockets
             c) systemctl --show-type list-sockets 'systemd*'

@@ -26,7 +26,7 @@ commands:
             screen -S <screen_name> -X quit
 
 
-    3.  uniq - used to filter out repetative lines in file
+    3.  uniq - used to filter out repetitive lines in file
 
         syntax: uniq [OPTIONS] [INPUT_FILE [OUTPUT_FILE]]
 
@@ -35,9 +35,9 @@ commands:
             d - only output repeated lines
             i - ignore-case
             f=N - Avoid comparing first field in each line
-            s=N - Aviod comparing first characters in each line
+            s=N - Avoid comparing first characters in each line
             u - only output unique line
 
         example:
-            uniq -di text.txt --> display only duplicate line with ingnore case sensitive 
+            uniq -di text.txt --> display only duplicate line with ignore case sensitive 
             uniq -D text.txt --> display all duplicate line only

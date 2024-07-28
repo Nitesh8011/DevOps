@@ -1,0 +1,46 @@
+Commands:
+
+    1. SETUP and INIT
+        a) git init
+        b) git clone [url]
+        c) git config --global user.name "<firstname> <lastname>"
+        d) git config --global user.email <email>
+
+    2. STAGE
+        a) git status
+        b) git add [file]
+        c) git diff
+        d) git diff --staged
+        e) git reset [file]
+        f) git commit -m <commit_message>
+    
+    3. BRANCH and MERGE
+        a) git branch [list of branch]
+        b) git branch <branch> [create a new branch at the current commit]
+        c) git checkout <branch> [checkout exiting branch]
+        d) git checkout -b <branch> [checkout new branch name from current checkout branch]
+        e) git rename -m <branch> [rename current checkout branch ]
+        f) git merge <branch>
+
+    4. SHARE and UPDATE
+        a) git pull
+        a) git remote add <alias> <url>
+        b) git fetch <alias>/<branch>
+        c) git push <alias> <branch>
+
+    5. REWRITE HISTORY
+        a) git rebase <branch> [apply any commits of current branch ahead of specified one]
+        b) git reset HEAD~1
+        c) git reset --hard <commit> [clear staging area, rewrite working tree from specified commit]
+        d) git restore
+
+    6. INSPECT and COMPARE
+        a) git log
+        b) git log <branch-A> <branch-B> [show the commits on branch-A that are not on branch-B]
+        c) git diff branch-B branch-A
+        
+    7. TEMPORARY COMMITS
+        a) git stash
+        b) git stash list
+        c) git stash pop [write working from top of stash stack]
+        d) git stash drop [discard the changes from top of stash stack]

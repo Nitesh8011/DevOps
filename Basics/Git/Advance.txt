@@ -1,0 +1,30 @@
+Commands:
+
+    1. SSH-KEY
+        ssh-keygen -t rsa -b 12048 -C "example@gmail.com"
+
+        t - type of key, rsa(default), ed25519, dsa, ecdsa
+        b - the number of bits in the key 1024,2048 etc. 2048 is sufficient for rsa
+
+        id_rsa - Private key stored on client
+        id_rsa.pub - Public key stored on server
+
+        permission:
+            Private key - 600
+            Public key - 644
+
+    2. git clean
+        Deleting untracked files in a repo's working directory
+
+    3. git cherry-pick <commit>
+        Checkout any particular commit
+
+    4. git checkout --orphan orphan_name
+        Create new branch without any parent branch
+
+    5. git commit -am "commit msg"
+        Add and commit at the same time but it'll not track new file only modified or updated file will get tracked
+
+
+    6. git merge Vs git rebase
+        https://www.atlassian.com/git/tutorials/merging-vs-rebasing

@@ -5,7 +5,7 @@ commands:
         options:
             MIN HOUR DOM MON DOW CMD
 
-            1. mintues (0-59)
+            1. minutes (0-59)
             2. hours of day (0-23)
             3. date of month (1-31)
             4. month of year (1-12)
@@ -80,7 +80,7 @@ commands:
 
         example:
             sleep 500 (ctrl+Z -> stop the jobs)
-            check with jobs with 'jobs' and can run that in backgroupd with %1 (1 if there is only one job)
+            check with jobs with 'jobs' and can run that in background with %1 (1 if there is only one job)
 
 
 

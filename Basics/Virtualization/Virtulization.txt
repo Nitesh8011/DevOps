@@ -9,7 +9,7 @@ Benefits of virtualization:
     
 Hypervisor is a software component that manages multiple virtual machines in a computer. It ensures that each virtual machine gets the allocated resources and does not interfere with the operation of other virtual machines. There are two types of hypervisors.
 
-There are 2 types of Hypervisiors:
+There are 2 types of Hypervisors:
     a) Type1 - with bare metal
     b) type2 - Hosted
 
@@ -19,4 +19,4 @@ There are 2 types of Hypervisiors:
 
 
     Virtualization Vs Containerization
-    In virtualization application runs as guest OS on hypervisors, whereas containerization run on host OS, with pre installed code, libraries, OS as well.
+    In virtualization application runs as guest OS on hypervisors, whereas containerization run on host OS, with pre installed code, libraries, OS as well, that make containerization fast as all the necessary tools needed to run application is within the container.
