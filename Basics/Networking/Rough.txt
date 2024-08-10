@@ -1,0 +1,80 @@
+1. TCP - Transmission Control Protocol (check data is receive to dest or not, slow compare to UDP)
+2. UDP - (stateless connection) User Datagram Protocol (doesn't check the data after sending used in video call, gaming etc)
+3. HTTP
+4. HTTPS
+5. SMTP
+5. POP3 and IMAC
+6. SSH
+7. VNC
+8. Telnet (Port 23)
+
+Dynamic Host Configuration Protocol (DHCP)
+Network access translator (NAT)
+Internet Protocol (IP) - Port used to receive data on particular application.
+
+1mbps - 1000000 bits/sec
+1gbps - 1000000000 bits/sec
+
+
+Internet is collection of -
+    1. Local Area Network (LAN) - connects devices like printers, computers, and servers within a limited geographic area (restricted to a few kilometers), such as a home, school, or office building. Ex- wifi, ethernet
+
+    2. Metropolitan Area Network (MAN) - Computer network that connects devices within a larger geographic area than a LAN, covering a city or a town. It usually consists of multiple LANs connected together to share resources and data.
+
+    3. Wide Area Network (WAN) - Across countries. Ex- Optical fiber cable
+        a) SoNET
+        b) Frame relay
+
+Topologies
+    a) BUS 
+    b) RING
+    c) STAR
+    d) TREE
+    e) MESH
+
+
+Open systems Interconnection Model (OSI) -
+    Own Network:
+        a) Application Layer - Application of software that we use
+        b) Presentation Layer - Convert data into machine language form in binary
+        c) Session Layer - authentication and authorization occurs here
+        d) Transport Layer - transfer data in chunks as packages with sequence number and add checksum to every package to check was it good or not.
+    Other Network:
+        e) Network Layer - best path to take to transfer data from source to dest
+        f) Data Link Layer - allows to directly connect
+        g) Physical Layer
+
+    ALL     - APPLICATION LAYER
+    PEOPLE  - PRESENTATION LAYER
+    SHOULD  - SESSION LAYER
+    TRY     - TRANSPORT LAYER
+    NEW     - NETWORK LAYER
+    DOMINOS - DATALINK
+    PIZZA   - PHYSICAL LAYER
+
+TCP/IP Model -
+    a) Application Layer
+    b) Transport Layer
+    c) Network Layer
+    d) Data Link Layer
+    e) Physical Layer
+
+
+Port: Ephemeral ports
+
+HTTP Method:
+    a) GET
+    b) POST
+    c) PUT
+    d) DELETE
+
+Status
+    a) 1xx - Information
+    b) 2xx - Success
+    c) 3xx - Redirecting
+    d) 4xx - Client Error
+    e) 5xx - Server Error
+
+
+nslookup -type=mx gmail.com
+
